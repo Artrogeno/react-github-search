@@ -14,13 +14,13 @@ declare module 'styled-components' {
       dark: string
       white: string
       black: string
-      bg_body: string
-      fg_body: string
-      theme_100: string
-      theme_200: string
-      theme_300: string
-      theme_400: string
-      theme_500: string
+      bgBody: string
+      fgBody: string
+      theme100: string
+      theme200: string
+      theme300: string
+      theme400: string
+      theme500: string
     }
   }
 }

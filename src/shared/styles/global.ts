@@ -19,13 +19,15 @@ export default createGlobalStyle`
     --dark: ${props => props.theme.colors.dark};
     --white: ${props => props.theme.colors.white};
     --black: ${props => props.theme.colors.black};
-    --bg_body: ${props => props.theme.colors.bg_body};
-    --fg_body: ${props => props.theme.colors.fg_body};
-    --theme_100: ${props => props.theme.colors.theme_100};
-    --theme_200: ${props => props.theme.colors.theme_200};
-    --theme_300: ${props => props.theme.colors.theme_300};
-    --theme_400: ${props => props.theme.colors.theme_400};
-    --theme_500: ${props => props.theme.colors.theme_500};
+    --bgBody: ${props => props.theme.colors.bgBody};
+    --fgBody: ${props => props.theme.colors.fgBody};
+    --theme100: ${props => props.theme.colors.theme100};
+    --theme200: ${props => props.theme.colors.theme200};
+    --theme300: ${props => props.theme.colors.theme300};
+    --theme400: ${props => props.theme.colors.theme400};
+    --theme500: ${props => props.theme.colors.theme500};
+    --header-h: 6rem;
+    --border-grid: 0.09rem;
   }
 
   ::-webkit-scrollbar {
@@ -56,11 +58,12 @@ export default createGlobalStyle`
 
 
   body {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
     font-family: var(--font-roboto);
     transition: background .6s ease-in-out, color .6s ease-in-out;
-    background: ${props => props.theme.colors.bg_body};
-    color: ${props => props.theme.colors.fg_body};
+    background: ${props => props.theme.colors.bgBody};
+    color: ${props => props.theme.colors.fgBody};
     &.no-scroll {
       overflow: hidden;
     }

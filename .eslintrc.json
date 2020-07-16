@@ -31,6 +31,7 @@
     "prettier"
   ],
   "rules": {
+    "camelcase": "off",
     "jsx-a11y/media-has-caption": "off",
     "prettier/prettier": "error",
     "react/destructuring-assignment": "off",
@@ -55,6 +56,7 @@
     "no-param-reassign": "off",
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
+    "no-shadow": "off",
     "no-use-before-define": "off",
     "prefer-const": "off",
     "guard-for-in": "off",
