@@ -1,10 +1,17 @@
 import React from 'react'
-import { Container, Title } from './styles'
+
+import List from './components/List'
+import { Container, Columns, Col } from './styles'
 
 const Main = () => {
   return (
     <Container>
-      <Title>Artrogeno React/Typescript</Title>
+      <Columns>
+        <Col>
+          <List />
+        </Col>
+        <Col>Nav Wrap</Col>
+      </Columns>
     </Container>
   )
 }
