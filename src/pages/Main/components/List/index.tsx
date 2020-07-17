@@ -5,27 +5,31 @@ import Header from '../Header'
 import { ItemI } from '../../../../shared/models'
 import { Container } from './styles'
 
-const List = () => {
-  const item: ItemI[] = [
-    {
-      type: 'file',
-      name: 'index.ts',
-      comment: 'changes for adding loader overlay',
-      modified_time: new Date(),
-    },
-    {
-      type: 'folder',
-      name: 'public',
-      comment: 'changes for adding loader overlay 2',
-      modified_time: new Date(),
-    },
-  ]
+interface Props {
+  data?: ItemI[]
+  counter?: number
+  isSearch?: boolean
+}
+
+const List: React.FC<Props> = ({ data, counter = 0, isSearch = false }) => {
   return (
     <Container>
       <Header />
-      {item.map((item, index) => (
-        <Item {...item} key={index} />
-      ))}
+      {data && data.length > 0 ? (
+        data.map((item, index) => (
+          <Item
+            {...item}
+            counter={counter}
+            index={index}
+            key={index}
+            searchView={isSearch}
+          />
+        ))
+      ) : (
+        <div>
+          <h3 className="no-result">No matching files found</h3>
+        </div>
+      )}
     </Container>
   )
 }
