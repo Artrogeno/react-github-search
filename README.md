@@ -1,10 +1,10 @@
 <p align="center">
   <a href="readme/">
-    <img src="https://github.com/Artrogeno/cra-template-artrogeno-ts/blob/master/src/assets/images/icon.svg" width=120 height=120 alt="React Artrogeno Typescript" />
+    <img src="https://github.com/Artrogeno/react-github-search/raw/master/src/assets/images/icon.svg" width=140 height=140 alt="React Artrogeno Typescript" />
   </a>
 </p>
 <h3 align="center">
-  ReactJs with Typescript :rage3:
+  Github clone search file with ReactJs/Typescript  :rage3:
 </h3>
 
 <br>
