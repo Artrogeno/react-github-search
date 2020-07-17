@@ -1,6 +1,6 @@
 <p align="center">
   <a href="readme/">
-    <img src="https://github.com/Artrogeno/cra-template-artrogeno-ts/raw/master/src/assets/images/logo.svg" width=120 height=120 alt="React github search" />
+    <img src="https://github.com/Artrogeno/react-github-search/raw/master/src/assets/images/logo.svg" width=120 height=120 alt="React github search" />
   </a>
 </p>
 <h3 align="center">
